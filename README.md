@@ -1,4 +1,7 @@
 # FlexDXCluster
+
+## Features
+
 Program which connects to a DX cluster and sends the spots to a FlexRadio after having check in Log4OM if entity has been already contacted, is a new band or new mode or both and sends the spot with different colors to Flex Panadapter.
 
 Features:
@@ -11,5 +14,9 @@ Features:
 If you do not use Log4OM but still use a program with SQLite database or MySQL it should work if the db name is "log".
 
 Any questions let me know
+
+## How to Run the program
+
+You need the .exe file, the config file (YAML format) and the country.xml, just run the .exe file and you are good to go.
 
 73 de F4BPO
