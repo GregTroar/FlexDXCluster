@@ -8,28 +8,28 @@ general:
 database:
   mysql: false #only one of the two can be true
   sqlite: true
-  mysql_db_user: rouggy
-  mysql_db_password: **********
+  mysql_db_user: user_db_login
+  mysql_db_password: user_db_pass
   mysql_db_name: log
   mysql_host: 127.0.0.1
   mysql_port: 3306
 sqlite:
-  sqlite_path: 'C:\Perso\Seafile\Radio\Logs\Log4OM\F4BPO.SQLite' # SQLite Db oath of Log4OM
+  sqlite_path: 'C:\Perso\Seafile\Radio\Logs\Log4OM\F4BPO.SQLite' # SQLite Db path of Log4OM
 cluster:
   server: dxc.k0xm.net # dxc.k0xm.net dxc.sm7iun.se
   port: 7300
-  login: f4bpo
-  password: ******
-  skimmer: true
-  ft8: false
-  ft4: false
-  command: "SET/FILTER DOC/PASS 3A,1A,4O,4U1I,4U1V,9A,9H,C3,CT,CU,DL,E7,EA,EA6,EI,ER,ES,EU,F,G,GD,GI,GJ,GM,GU,GW,HA,HB,HB0,HV,I,IS,IT,JW,JX,LA,LX,LY,LZ,OE,OH,OH0,OJ0,OK,OM,ON,OY,OZ,PA,S5,SM,SP,SV,SV5,SV9,T7,TA1,TF,TK,UA,UA2,UR,YL,YO,YU,Z6,Z3,ZA,ZB" # "SET/NOFILTER" "SET/FILTER DOC/PASS 3A,1A,4O,$u1I,4U1V,9A,9H,C3,CT,CU,DL,E7,EA,EA6,EI,ER,ES,EU,F,G,GD,GI,GJ,GM,GU,GW,HA,HB,HB0,HV,I,IS,IT,JW,JX,LA,LX,LY,LZ,OE,OH,OH0,OJ0,OK,OM,ON,OY,OZ,PA,S5,SM,SP,SV,SV5,SV9,T7,TA1,TF,TK,UA,UA2,UR,YL,YO,YU,Z6,Z3,ZA,ZB"
+  login: f4bpo #telnet login
+  password: ****** # only if needed else keep blank
+  skimmer: true #announce cw spots from RBN
+  ft8: false #announce FT8 spots from pskreporter
+  ft4: false #announce FT4 spots from pskreporter
+  command: "SH/DX 30" #any command you want to send to the dx cluster server you connect to
   login_prompt: "Please enter your call:"
 flex:
   discovery: false # Radio must be on same LAN than the program
-  ip: ******* # if discovery is true no need to put an IPm can be local IP or remote
+  ip: ******* # if discovery is true no need to put an IP, can be local IP or remote
   spot_life: 600 #seconds
-telnetserver: # Log4OM must be connected to this server ie: localhost:7301 if on same machine as this program else ip:7301
+telnetserver: #You can connect Log4OM to this server if you want, it will replicate the spots received from the cluster under cluster section: 127.0.0.1:7301
   host: 0.0.0.0
   port: 7301 # port for the telnet server
 gotify:
@@ -40,7 +40,7 @@ gotify:
   NewBand: false
   NewMode: false
   NewBandAndMode: false
-log4om: # Send calls clicked on panadapter to Log4OM, need to enable remote control in Connections settings and define a port (default is 2241)
+log4om: # Send calls clicked on panadapter to Log4OM, need to enable remote control in Connections settings and define a port (default is 2241) in Log4OM
   log4om_enable: true
   log4om_ip: 127.0.0.1
   remote_port: 2241
