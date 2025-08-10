@@ -40,8 +40,8 @@ gotify:
   NewBand: false
   NewMode: false
   NewBandAndMode: false
-Log4OM: # Send calls clicked on panadapter to Log4OM, need to enable remote control in Connections settings and define a port (default is 2241)
-  enable: true
-  ip: 127.0.0.1
-
+log4om: # Send calls clicked on panadapter to Log4OM, need to enable remote control in Connections settings and define a port (default is 2241)
+  log4om_enable: true
+  log4om_ip: 127.0.0.1
   remote_port: 2241
+
