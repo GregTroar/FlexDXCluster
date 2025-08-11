@@ -20,4 +20,13 @@ Any questions let me know
 
 You need the .exe file, the config file (YAML format) and the country.xml, update the config.yml to fit your needs and just run the .exe file and you are good to go.
 
+## Commands of the Telnet Server
+
+The server running can manage the following commands:
+- Bye
+- DX (to send a spot)
+- SH/DX xx
+
+All the commands will be forwarded to the DX Cluster server you are connected to.
+
 73 de F4BPO
