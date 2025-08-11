@@ -18,6 +18,6 @@ Any questions let me know
 
 ## How to Run the program
 
-You need the .exe file, the config file (YAML format) and the country.xml, just run the .exe file and you are good to go.
+You need the .exe file, the config file (YAML format) and the country.xml, update the config.yml to fit your needs and just run the .exe file and you are good to go.
 
 73 de F4BPO
