@@ -2,7 +2,7 @@
 
 ## Features
 
-Program which connects to a DX cluster and sends the spots to a FlexRadio after having check in Log4OM if entity has been already contacted, is a new band or new mode or both and sends the spot with different colors to Flex Panadapter.
+Program which connects to a DX cluster and sends the spots to a FlexRadio's panadapter after having check in Log4OM if entity has been already contacted, is a new band or new mode or both and sends the spot with different colors to Flex Panadapter.
 
 Features:
 - Can either auto discover Flex on the LAN or provide an IP address to connect to the radio
@@ -10,6 +10,7 @@ Features:
 - DX Cluster client which can connect to one of your prefered cluster
 - Can send notification to Gotify for new entity, new band or new mode (can be disabled)
 - Fill the callsign field in Log4OM when a spot is clicked on the Flex panadapter
+- Sends the spot to the Flex Panadapter
 
 If you do not use Log4OM but still use a program with SQLite database or MySQL it should work if the db name is "log".
 
