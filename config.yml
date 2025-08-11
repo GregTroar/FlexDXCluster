@@ -14,7 +14,7 @@ database:
   mysql_host: 127.0.0.1
   mysql_port: 3306
 sqlite:
-  sqlite_path: 'C:\Perso\Seafile\Radio\Logs\Log4OM\F4BPO.SQLite' # SQLite Db path of Log4OM
+  sqlite_path: 'C:\Perso\Seafile\Radio\Logs\Log4OM\F4BPO.SQLite' # SQLite Db path of Log4OM, required if sqlite is true
 cluster:
   server: dxc.k0xm.net # dxc.k0xm.net dxc.sm7iun.se
   port: 7300
@@ -44,4 +44,5 @@ log4om: # Send calls clicked on panadapter to Log4OM, need to enable remote cont
   log4om_enable: true
   log4om_ip: 127.0.0.1
   remote_port: 2241
+
 
