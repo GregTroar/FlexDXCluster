@@ -26,6 +26,7 @@ The server running can manage the following commands:
 - Bye
 - DX (to send a spot)
 - SH/DX xx
+- SET/xxxx
 
 All the commands will be forwarded to the DX Cluster server you are connected to.
 
